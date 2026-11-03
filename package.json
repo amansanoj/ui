@@ -1,0 +1,20 @@
+{
+  "name": "ui-monorepo",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "dev": "bun --filter playground dev",
+    "build": "bun --filter '@amansanoj/ui' build",
+    "typecheck": "bun --filter '*' typecheck",
+    "lint": "bun --filter '@amansanoj/ui' lint",
+    "changeset": "changeset"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.27.11"
+  }
+}

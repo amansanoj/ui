@@ -1,0 +1,22 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Build Outputs
+dist/
+build/
+.next/
+out/
+
+# Development
+.turbo/
+.cache/
+*.tsbuildinfo
+.DS_Store
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+bun.lockb
+.agents/
